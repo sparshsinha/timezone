@@ -1,0 +1,5 @@
+name: Location Time Zone
+description: This module is used to see the current time for the location.
+type: module
+core_version_requirement: ^8 || ^9
+core: 8.x

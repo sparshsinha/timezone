@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * Implements hook_schema()
+ */
+
+function timezone_schema() {
+  $schema['timezone_tables'] = [
+    'description' => 'A table to store Timezone data',
+    'fields' => [
+      'id' => [
+      'description' => 'Holds the id value',
+      'type' => 'serial',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+      ],
+      'country' => [
+        'description' => 'Holds the country value',
+        'type' => 'varchar',
+        'length' => '50',
+        'not null' => TRUE,
+      ],
+      'city' => [
+        'description' => 'Holds the city value',
+        'type' => 'varchar',
+        'length' => '50',
+        'not null' => TRUE,
+      ],
+      'timezone' => [
+        'description' => 'Holds the timezone value',
+        'type' => 'varchar',
+        'length' => '50',
+        'not null' => TRUE,
+      ],
+    ],  
+    'primary key' => ['id'], 
+  ];  
+  return $schema;
+}

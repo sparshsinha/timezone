@@ -1,0 +1,7 @@
+timezone.content:
+  path: '/timezone'
+  defaults:
+    _form: '\Drupal\timezone\Form\TimeZoneForm'
+    _title: 'Location Time Zone'
+  requirements: 
+    _permission: 'access content'

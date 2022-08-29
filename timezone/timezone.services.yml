@@ -1,0 +1,4 @@
+services:
+  timezone.service:
+    class: Drupal\timezone\services\TimeZoneService
+    arguments: ['@database']
